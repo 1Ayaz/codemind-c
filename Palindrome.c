@@ -1,12 +1,17 @@
-#include<stdio.h> 
+
+#include<stdio.h>
 int main()
-{ int a,r,re=0,org;
-scanf("%d",&a);
+{ int a,rev=0;
+int org;
+scanf("%d",&a); 
 org=a;
 while(a!=0)
-{ r=a%10; re=re*10+r; a/=10; } 
-if(org==re)
-printf("Palindrome");
-else
-printf("Not Palindrome");
+{ int r=a%10;
+rev=rev*10+r; 
+a/=10; 
+    
+}
+if(org==rev) 
+printf("True"); 
+else printf("False");
 }
